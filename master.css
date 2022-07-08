@@ -1,0 +1,103 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+	margin: 0;
+	height: 100%;
+	
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body{
+	background-image: url(./images/bench.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	background-position: center;
+	margin: 0;
+	height: 100%;
+	
+}
+
+#bg {
+    position: fixed;
+    min-width: 100%; 
+    min-height: 100%;
+	left: 0px;
+	top: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.ctIMG {
+display: block;
+    height: 100%;
+	width: 100%;  
+	opacity: 0.3;
+	margin-top: -8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a:link, a:visited {
+    background-color: rgba(80, 80, 80, 0.6);
+    color: white;
+    padding: 10px 40px;
+    margin-right: 1px;
+    margin-left: 1px;
+	margin-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 40px;
+	opacity: 0.4;
+}
+
+a:hover {
+    background-color: rgba(80, 80, 80, 0.6);
+    color: white;
+    padding: 10px 40px;
+    margin-right: 1px;
+    margin-left: 1px;
+	margin-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 40px;
+	opacity: 1.0;
+}
+
+h1 {
+	font-size: 500%;
+	position: absolute;
+	right: 0px;
+	top: -150px;
+	font-style: italic;
+
+}
+
+h2 {
+	font-size: 500%;
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	font-style: italic;
+    -webkit-animation: color-change 1s infinite;
+}
+.content {
+    position: fixed;
+    left: 0;
+	bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0px;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Courier';
+}
