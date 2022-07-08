@@ -14,15 +14,85 @@ html {
     background: #FF0000;
 }
 
-body{
-	background-image: url(./images/bench.png);
+body {
+    background-image: url(./images/bench.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-	background-position: center;
-	margin: 0;
-	height: 100%;
-	
+    background-position: center;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
+
+.GuideBox {
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+}
+
+
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    border: none;
+}
+
+.mapsDiv {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 50%;
+    height: 65%;
+    font-size: 15px;
+    font-family: 'Courier';
+    top: 15%;
+    left: 0px;
+}
+
+.HiddenMapsDiv {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 50%;
+    height: 65%;
+    font-size: 15px;
+    font-family: 'Courier';
+    top: 15%;
+    right: 0px;
+    margin: auto;
+}
+
+.TableHeader {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+
+.PageHeader {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 25%;
+    height: 7%;
+    font-size: 15px;
+    font-family: 'Courier';
+    top: 5%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+}
+
 
 #bg {
     position: fixed;
@@ -36,13 +106,14 @@ body{
 }
 
 .ctIMG {
-display: block;
+    display: block;
     height: 100%;
-	width: 100%;  
-	opacity: 0.3;
-	margin-top: -8px;
-	margin-left: auto;
-	margin-right: auto;
+    width: 100%;
+    opacity: 0.3;
+    margin-top: -8px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -100;
 }
 a:link, a:visited {
     background-color: rgba(80, 80, 80, 0.6);
@@ -72,23 +143,8 @@ a:hover {
 	opacity: 1.0;
 }
 
-h1 {
-	font-size: 500%;
-	position: absolute;
-	right: 0px;
-	top: -150px;
-	font-style: italic;
 
-}
 
-h2 {
-	font-size: 500%;
-	position: absolute;
-	top: 200px;
-	left: 30px;
-	font-style: italic;
-    -webkit-animation: color-change 1s infinite;
-}
 .content {
     position: fixed;
     left: 0;
@@ -100,4 +156,5 @@ h2 {
 	text-align: center;
 	font-size: 15px;
 	font-family: 'Courier';
+    z-index: 100;
 }
